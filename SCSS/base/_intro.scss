@@ -1,0 +1,7 @@
+.intro-text-container {
+	padding: $padding-default;
+}
+
+.intro {
+	@include flexbox();
+}

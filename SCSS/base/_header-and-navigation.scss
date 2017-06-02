@@ -1,0 +1,16 @@
+//mixins
+
+
+.header-container {
+	@include flexbox();
+	text-align: center;
+	ul {
+	 @include flexbox();
+	}
+	li {
+		margin: 15px 10px;
+		padding: 10px;
+		box-shadow: 0px 0px 7px 2px rgba($color-cta,0.8);
+		background-color: white;
+	}
+}

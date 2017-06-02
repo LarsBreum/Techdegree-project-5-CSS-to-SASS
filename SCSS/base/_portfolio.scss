@@ -1,0 +1,13 @@
+
+.portfolio, .skills {
+	text-align: center;
+	padding: $padding-default;
+	background-color: $color-white;
+	.flex-container {
+	@include flexbox();
+	text-align: center;
+	
+	}
+}
+
+

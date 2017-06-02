@@ -1,0 +1,8 @@
+//MIXINS
+@mixin flexbox ($fd: column, $fw: nowrap, $justc: center, $alignv: null, $alignc: stretch) {
+	display: flex;
+	flex-flow: $fd $fw;
+	justify-content: $justc;
+	align-items: $alignc;
+	@content;
+}
