@@ -46,7 +46,7 @@ header {
 	    height: auto;
 	    background: initial;
 	    box-shadow: none;
-	    padding: $padding-header-align;
+	    padding: $gutter;
 	    margin: 0;
 	    a {
 	    	@include text-shadow;

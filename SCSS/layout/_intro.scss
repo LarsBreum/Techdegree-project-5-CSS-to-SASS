@@ -3,11 +3,20 @@
 
 .intro {
 	@include flexbox();
+		p {
+			text-align: center;
+		}
 		@media (min-width: $br-small) {
 			@include flexbox($fd: row-reverse, $alignc: center);
+			p {
+				text-align: left;
+			}
 		}
 		.intro-text-container {
-			text-align: left;
-			padding: $padding-header-align;
+			padding: $gutter;
 		}
+		.intro-child {
+			flex-basis: per-line(2);
+		}
+
 }

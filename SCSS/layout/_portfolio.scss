@@ -4,7 +4,7 @@
 	text-align: center;
 	background-color: $color-white;
 	.flex-container {
-	@include flexbox();
+	@include flexbox($justc: space-around);
 	text-align: center;
 
 		@media (min-width: $br-small) {

@@ -89,7 +89,7 @@ header {
       height: auto;
       background: initial;
       box-shadow: none;
-      padding: 0 20px;
+      padding: 10px;
       margin: 0; }
       .main-nav li a {
         text-shadow: 3px 3px 5px #222;
@@ -111,15 +111,20 @@ header {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: stretch; }
+  .intro p {
+    text-align: center; }
   @media (min-width: 768px) {
     .intro {
       display: flex;
       flex-flow: row-reverse nowrap;
       justify-content: center;
-      align-items: center; } }
+      align-items: center; }
+      .intro p {
+        text-align: left; } }
   .intro .intro-text-container {
-    text-align: left;
-    padding: 0 20px; }
+    padding: 10px; }
+  .intro .intro-child {
+    flex-basis: 46.09375%; }
 
 /***** PORTFOLIO *****/
 .portfolio, .skills {
@@ -128,7 +133,7 @@ header {
   .portfolio .flex-container, .skills .flex-container {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     text-align: center; }
     @media (min-width: 768px) {
