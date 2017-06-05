@@ -1,0 +1,32 @@
+/***** PORTFOLIO *****/
+
+.portfolio, .skills {
+	text-align: center;
+	background-color: $color-white;
+	.flex-container {
+	@include flexbox();
+	text-align: center;
+
+		@media (min-width: $br-small) {
+			@include flexbox($fd: row, $fw: wrap)
+		}
+	}
+}
+
+
+.skills {
+	margin-top: $section-gutter;
+
+}
+
+.portfolio-element {
+	padding: $gutter;
+	@media (min-width: $br-small) {
+		flex-basis: per-line(2);
+	}
+	@media (min-width: $br-large) {
+		flex-basis: per-line(3);
+	}
+}
+
+

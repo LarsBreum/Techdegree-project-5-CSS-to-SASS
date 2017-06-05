@@ -1,8 +1,28 @@
 //MIXINS
+
+//Flexbox mixin
 @mixin flexbox ($fd: column, $fw: nowrap, $justc: center, $alignv: null, $alignc: stretch) {
 	display: flex;
 	flex-flow: $fd $fw;
 	justify-content: $justc;
 	align-items: $alignc;
 	@content;
+}
+
+
+
+//typography mixins
+@mixin cta-shadow($color: $color-cta) {
+	box-shadow: 0px 0px 7px 2px rgba($color,0.8);
+}
+
+@mixin a {
+	text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+@mixin text-shadow {
+	text-shadow: 3px 3px 5px #222;
 }

@@ -1,57 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-.header-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: stretch;
-  text-align: center; }
-  .header-container ul {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: stretch; }
-  .header-container li {
-    margin: 15px 10px;
-    padding: 10px;
-    box-shadow: 0px 0px 7px 2px rgba(255, 165, 0, 0.8);
-    background-color: white; }
-
-.intro-text-container {
-  padding: 0 5%; }
-
-.intro {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: stretch; }
-
-.portfolio, .skills {
-  text-align: center;
-  padding: 0 5%;
-  background-color: #fefefe; }
-  .portfolio .flex-container, .skills .flex-container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: stretch;
-    text-align: center; }
-
-footer {
-  text-align: center;
-  padding: 0 5%; }
-
-.footer-nav {
-  text-align: initial;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: stretch; }
-  .footer-nav #student-name {
-    margin-right: auto; }
-  .footer-nav ul {
-    display: none; }
-
 /***** GENERAL STYLES *****/
 * {
   box-sizing: border-box; }
@@ -68,6 +16,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif; }
 
+h2 {
+  margin-top: 0; }
+
 nav ul {
   list-style-type: none;
   padding: 0; }
@@ -77,5 +28,158 @@ img {
 
 div {
   width: 100%; }
+
+header h1 {
+  text-shadow: 3px 3px 5px #222; }
+
+footer a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .5s; }
+
+/***** HEADER AND NAVIGATION *****/
+header {
+  background: linear-gradient(#78CAFF, transparent 80%), linear-gradient(transparent, white 100%), url(../images/james-donovan-.jpg) no-repeat center/cover; }
+  header h1 {
+    font-weight: 700;
+    font-size: 3em;
+    color: white; }
+
+.header-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center; }
+  .header-container ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch; }
+    @media (min-width: 768px) {
+      .header-container ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch; } }
+    @media (min-width: 1024px) {
+      .header-container ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: right; } }
+
+.main-nav li {
+  margin: 15px 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 7px 2px rgba(255, 165, 0, 0.8); }
+  .main-nav li a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .5s; }
+  @media (min-width: 768px) {
+    .main-nav li {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      background: initial;
+      box-shadow: none;
+      padding: 0 20px;
+      margin: 0; }
+      .main-nav li a {
+        text-shadow: 3px 3px 5px #222;
+        color: white; } }
+@media (min-width: 1024px) {
+  .main-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch; } }
+@media (min-width: 1024px) {
+  .main-nav h1, .main-nav ul {
+    flex: 1 0 auto;
+    align-self: center; } }
+
+/***** INTRO *****/
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch; }
+  @media (min-width: 768px) {
+    .intro {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: center;
+      align-items: center; } }
+  .intro .intro-text-container {
+    text-align: left;
+    padding: 0 20px; }
+
+/***** PORTFOLIO *****/
+.portfolio, .skills {
+  text-align: center;
+  background-color: #fefefe; }
+  .portfolio .flex-container, .skills .flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .portfolio .flex-container, .skills .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch; } }
+
+.skills {
+  margin-top: 20px; }
+
+.portfolio-element {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .portfolio-element {
+      flex-basis: 46.09375%; } }
+  @media (min-width: 1024px) {
+    .portfolio-element {
+      flex-basis: 27.47396%; } }
+
+/***** FOOTER ****/
+footer {
+  text-align: center;
+  margin-top: 20px; }
+  footer p {
+    width: 60%;
+    margin: 30px auto; }
+
+.footer-nav {
+  text-align: initial;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch; }
+  .footer-nav #student-name {
+    margin-right: auto;
+    text-transform: uppercase; }
+  .footer-nav ul {
+    display: none; }
+    @media (min-width: 768px) {
+      .footer-nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch; } }
+    .footer-nav ul li {
+      margin: 0 5px; }
+
+@media (min-width: 768px) {
+  #back-to-top {
+    display: none; } }
 
 /*# sourceMappingURL=application.css.map */

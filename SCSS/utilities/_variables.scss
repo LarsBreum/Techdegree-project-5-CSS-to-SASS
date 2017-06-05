@@ -6,5 +6,13 @@ $color-header-top-gradient: #78CAFF;
 $color-cta: #FFA500;
 $color-white: #fefefe;
 
-//padding and margins
-$padding-default: 0 5%;
+//gutter padding and margins
+$gutter: 10px;
+$section-gutter: 20px;
+$padding-header-align: 0 20px;
+
+//breakpoints
+$br-small: 768px;
+$br-large: 1024px;
+
+$max-width: 1024px;

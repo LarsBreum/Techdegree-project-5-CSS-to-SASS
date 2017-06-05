@@ -1,0 +1,67 @@
+/***** HEADER AND NAVIGATION *****/
+
+header {
+	background: linear-gradient(#78CAFF, transparent 80%),
+	linear-gradient(transparent, white 100%),
+	url(../images/james-donovan-.jpg) no-repeat center / cover;
+
+	h1 {
+	    @extend %text-shadow;
+	    font-weight: 700;
+	    font-size: 3em;
+	    color: white;
+	}
+} 
+
+.header-container {
+	@include flexbox();
+	text-align: center;
+
+	ul {
+	@include flexbox();
+
+		@media (min-width: $br-small) {
+		@include flexbox($fd: row, $fw: wrap);
+
+		}
+		@media (min-width: $br-large) {
+		@include flexbox($fd: row, $fw: wrap, $justc: center, $alignc: right);
+
+		}
+	}
+	
+}
+.main-nav {
+	li {
+		margin: 15px 10px;
+		padding: 10px;
+		background-color: white;
+		@include cta-shadow;
+		a {
+			@include a();
+		}
+	@media (min-width: $br-small) {
+		display: inline-block;
+	    width: auto;
+	    height: auto;
+	    background: initial;
+	    box-shadow: none;
+	    padding: $padding-header-align;
+	    margin: 0;
+	    a {
+	    	@include text-shadow;
+	    	color: white;
+	    }
+
+	}
+}
+	@media (min-width: $br-large) {
+		@include flexbox($fd: row);
+	}
+	h1, ul {
+		@media (min-width: $br-large) {
+		flex: 1 0 auto;
+			align-self: center;
+		}
+	}
+}

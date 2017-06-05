@@ -1,0 +1,13 @@
+/***** INTRO *****/
+
+
+.intro {
+	@include flexbox();
+		@media (min-width: $br-small) {
+			@include flexbox($fd: row-reverse, $alignc: center);
+		}
+		.intro-text-container {
+			text-align: left;
+			padding: $padding-header-align;
+		}
+}

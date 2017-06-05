@@ -1,0 +1,38 @@
+/***** FOOTER ****/
+
+footer {
+	text-align: center;
+	margin-top: $section-gutter;
+
+	p {
+		width: 60%;
+		margin: 30px auto;
+	}
+	a {
+		@extend %a;
+	}
+}
+
+.footer-nav {
+	text-align: initial;
+	@include flexbox($fd: row);
+
+	#student-name {
+		margin-right: auto;
+		text-transform: uppercase;
+	}
+	ul {
+		display: none;
+		@media (min-width: $br-small) {
+			@include flexbox($fd: row, $justc: space-between);
+		}
+		li {
+			margin: 0 5px;
+		}
+	}
+}
+#back-to-top {
+	@media (min-width: $br-small) {
+		display: none;
+	}
+}
