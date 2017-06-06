@@ -2,6 +2,9 @@
 
 
 .intro {
+	@media (min-width: $br-large) {
+		padding: 0 px-to-pct(51px);
+	}
 	@include flexbox();
 		p {
 			text-align: center;
@@ -17,6 +20,6 @@
 		}
 		.intro-child {
 			flex-basis: per-line(2);
-		}
 
+	}
 }

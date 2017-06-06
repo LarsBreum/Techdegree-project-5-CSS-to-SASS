@@ -1,4 +1,9 @@
-//MIXINS
+//MIXINS AND EXTENTIONS
+
+//section gutter
+%section-gutter {
+	padding-top: $gutter * 2;
+}
 
 //Flexbox mixin
 @mixin flexbox ($fd: column, $fw: nowrap, $justc: center, $alignv: null, $alignc: stretch) {
@@ -9,6 +14,11 @@
 	@content;
 }
 
+//Center container mixin
+@mixin center-container {
+	max-width: $max-width;
+	margin: 0 auto;
+}
 
 
 //typography mixins
@@ -25,4 +35,9 @@
 }
 @mixin text-shadow {
 	text-shadow: 3px 3px 5px #222;
+}
+
+//text-shadow extension
+%text-shadow {
+	@include text-shadow;
 }

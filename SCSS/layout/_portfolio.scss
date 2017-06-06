@@ -1,11 +1,13 @@
 /***** PORTFOLIO *****/
 
 .portfolio, .skills {
+	@extend %section-gutter;
 	text-align: center;
 	background-color: $color-white;
 	.flex-container {
 	@include flexbox($justc: space-around);
 	text-align: center;
+	@include center-container();
 
 		@media (min-width: $br-small) {
 			@include flexbox($fd: row, $fw: wrap)
@@ -28,5 +30,3 @@
 		flex-basis: per-line(3);
 	}
 }
-
-

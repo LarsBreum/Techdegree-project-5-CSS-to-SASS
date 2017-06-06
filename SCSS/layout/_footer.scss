@@ -1,22 +1,29 @@
 /***** FOOTER ****/
 
 footer {
+	@extend %section-gutter;
 	text-align: center;
 	margin-top: $section-gutter;
+	@include center-container();
 
 	p {
-		width: 60%;
+		width: px-to-pct($max-width - 200px);
+		max-width: 600px;
 		margin: 30px auto;
 	}
 	a {
 		@extend %a;
+	}
+	hr {
+		width: px-to-pct($max-width - 200px);
 	}
 }
 
 .footer-nav {
 	text-align: initial;
 	@include flexbox($fd: row);
-
+	width: px-to-pct($max-width - 200px);
+	@include center-container();
 	#student-name {
 		margin-right: auto;
 		text-transform: uppercase;

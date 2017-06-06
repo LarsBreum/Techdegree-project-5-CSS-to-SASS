@@ -16,7 +16,7 @@ header {
 .header-container {
 	@include flexbox();
 	text-align: center;
-
+	@include center-container();
 	ul {
 	@include flexbox();
 
