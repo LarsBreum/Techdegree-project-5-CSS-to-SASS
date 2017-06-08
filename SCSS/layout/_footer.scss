@@ -10,9 +10,13 @@ footer {
 		width: px-to-pct($max-width - 200px);
 		max-width: 600px;
 		margin: 30px auto;
+		:hover {
+			@extend %hover;
+		}
 	}
 	a {
 		@extend %a;
+
 	}
 	hr {
 		width: px-to-pct($max-width - 200px);
@@ -35,6 +39,9 @@ footer {
 		}
 		li {
 			margin: 0 5px;
+			:hover {
+				@extend %hover;
+			}
 		}
 	}
 }

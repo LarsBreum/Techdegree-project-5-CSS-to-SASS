@@ -5,7 +5,7 @@
 	box-sizing: border-box;	
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	@include font-face;
 	margin: 0;
 	padding: 0;
 	background: $color-default-bg; 
@@ -13,7 +13,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
+	@include font-face($font1: 'Roboto', $font2: sans-serif, $color: $color-black, $fw: 700, $fs: 1.3em);
 }
 h2 {
 	margin-top: 0;

@@ -3,6 +3,9 @@
 .portfolio, .skills, footer {
   padding-top: 20px; }
 
+.main-nav li :hover, footer p :hover, .footer-nav ul li :hover {
+  color: #FFA500; }
+
 header h1 {
   text-shadow: 3px 3px 5px #222; }
 
@@ -11,13 +14,21 @@ header h1 {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #010101;
+  font-size: 1em;
   margin: 0;
   padding: 0;
   background: #eee; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #010101;
+  font-size: 1.3em; }
 
 h2 {
   margin-top: 0; }
@@ -37,15 +48,18 @@ footer a {
   color: #444444;
   font-weight: 700;
   text-transform: uppercase;
-  transition: all .5s; }
+  transition: color .5s; }
 
 /***** HEADER AND NAVIGATION *****/
 header {
   background: linear-gradient(#78CAFF, transparent 80%), linear-gradient(transparent, white 100%), url(../images/james-donovan-.jpg) no-repeat center/cover; }
   header h1 {
+    color: #fefefe;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
     font-weight: 700;
-    font-size: 3em;
-    color: white; }
+    color: #fefefe;
+    font-size: 3em; }
 
 .header-container {
   display: flex;
@@ -75,7 +89,9 @@ header {
 
 .main-nav li {
   margin: 15px 10px;
-  padding: 10px;
+  padding: 10px; }
+
+.main-nav li {
   background-color: white;
   box-shadow: 0px 0px 7px 2px rgba(255, 165, 0, 0.8); }
   .main-nav li a {
@@ -83,7 +99,7 @@ header {
     color: #444444;
     font-weight: 700;
     text-transform: uppercase;
-    transition: all .5s; }
+    transition: color .5s; }
   @media (min-width: 768px) {
     .main-nav li {
       display: inline-block;
