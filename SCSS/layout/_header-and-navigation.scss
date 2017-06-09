@@ -24,7 +24,7 @@ header {
 
 		}
 		@media (min-width: $br-large) {
-		@include flexbox($fd: row, $fw: wrap, $justc: center, $alignc: right);
+		@include flexbox($fd: row, $fw: wrap, $justc: center);
 
 		}
 	}

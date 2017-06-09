@@ -85,7 +85,7 @@ header {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: right; } }
+        align-items: stretch; } }
 
 .main-nav li {
   margin: 15px 10px;
