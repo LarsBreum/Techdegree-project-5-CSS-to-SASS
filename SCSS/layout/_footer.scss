@@ -14,10 +14,7 @@ footer {
 			@extend %hover;
 		}
 	}
-	a {
-		@extend %a;
-
-	}
+	
 	hr {
 		width: px-to-pct($max-width - 200px);
 	}
@@ -43,6 +40,9 @@ footer {
 				@extend %hover;
 			}
 		}
+	}
+	h4 {
+		font-size: 1em;
 	}
 }
 #back-to-top {

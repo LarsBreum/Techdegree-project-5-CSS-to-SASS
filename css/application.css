@@ -3,7 +3,14 @@
 .portfolio, .skills, footer {
   padding-top: 20px; }
 
-.main-nav li :hover, footer p :hover, .footer-nav ul li :hover {
+a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color .5s; }
+
+a :hover, .main-nav li :hover, footer p :hover, .footer-nav ul li :hover {
   color: #FFA500; }
 
 header h1 {
@@ -42,13 +49,6 @@ img {
 
 div {
   width: 100%; }
-
-footer a {
-  text-decoration: none;
-  color: #444444;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: color .5s; }
 
 /***** HEADER AND NAVIGATION *****/
 header {
@@ -213,6 +213,8 @@ footer {
         align-items: stretch; } }
     .footer-nav ul li {
       margin: 0 5px; }
+  .footer-nav h4 {
+    font-size: 1em; }
 
 @media (min-width: 768px) {
   #back-to-top {
