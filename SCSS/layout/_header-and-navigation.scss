@@ -36,7 +36,7 @@ header {
 }
 .main-nav {
 	li {
-		background-color: white;
+		background-color: $color-white;
 		@extend %nav-li;
 		@include cta-shadow;
 		:hover {
@@ -55,7 +55,7 @@ header {
 	    margin: 0;
 	    a {
 	    	@include text-shadow;
-	    	color: white;
+	    	color: $color-white;
 	    }
 
 	}
